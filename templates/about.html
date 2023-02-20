@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 5px;
+  text-align: center;
+  background-color: #02cac7;
+  color: rgb(245, 245, 6);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(2, 23, 254);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(249, 0, 0);
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+</div>
+<br><br><br>
+<h5>At the most fundamental level, supply chain management (SCM) is management of the flow of goods, data, and finances related to a product or service raw  <br><br> materials to the delivery of the product at its final destination.
+  We now live in a time of unprecedented global business<br> and trade, not to mention continual technology innovation and rapidly changing customer expectations.<br> Today’s best supply chain strategies call for a demand-driven operating model that can successfully bring people, processes, and technology together around integrated capabilities to deliver goods and services with extraordinary speed and accuracy.<br>
+  Intelligent SCM has other advantages, too. For instance,<br> it can free up supply chain employees to contribute to the business in ways that add more value. Better SCM systems that automate mundane tasks can equip supply chain professionals with the tools they need to successfully deliver the products and services the supply chain is designed around.
+  SCM has historically been about increasing efficiency and reducing costs. Although those needs haven’t changed, what has changed is that the customer is now playing a front-and-center role in setting SCM priorities. It’s been said that “customer experiences live and die in the supply chain.”
+  Customer loyalty is predicated on an enterprise being able to quickly and accurately fulfill customer expectations. Raw materials, manufacturing, logistics, and trade and order management must all be coordinated to get a given item to the customer within a reasonable timeframe. To accomplish this, companies must look at their supply chains through their customers’ eyes. It’s not simply about getting the order to the customer on time; it’s about doing everything at the right time—before, during, and after order delivery.
+</h5>
+<br><br><br>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>jane@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTB8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(255, 0, 0, 0.2);">
+    © 2023 Copyright -
+    <a class="text-dark" href="https://karthikeya16.netlify.app/">KarthikeyaGuruju</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+</body>
+</html>
+
+
+{% endblock %}
