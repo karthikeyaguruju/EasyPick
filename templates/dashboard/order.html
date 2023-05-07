@@ -1,0 +1,58 @@
+{% extends 'partials/base.html' %}
+{%block title %}Order Page{% endblock %}
+
+{% block content %}
+{%  include 'partials/topside.html' %}
+<!--Table-->
+<div class="container">
+    <div class="row my-4">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-8">
+            <table class="table bg-white">
+                <thead class="bg-info">
+                    <tr class="text-white">
+                     
+                        <th scope="col">Product</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Order by</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Acceptance</th>
+                        <th scope="col">Delete</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for orders in orders %}
+                    <tr>
+                        <td>{{ orders.Product  }}</td>
+                        <td>{{ orders.Product.category }}</td>
+                        <td>{{ orders.order_quantity }}</td>
+                        <td>
+                           {{orders.staff.username }}
+                        </td>
+                        <td>
+                            {{orders.date }}
+                         </td>
+                         <td>
+                        <a class="btn btn-success btn-sm" href="pop.html">Accept</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-danger btn-sm" href="">Delete</a>
+                        </td>
+                    </tr>
+                    {% endfor%}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!--End Table-->
+
+{% endblock %}
